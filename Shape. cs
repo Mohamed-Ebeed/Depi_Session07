@@ -1,0 +1,28 @@
+namespace Depi_Session07
+{
+    // Q1
+    // Create a Shape class with Width, Height, constructor, Area()
+    // and override ToString().
+
+    public class Shape
+    {
+        public double Width { get; set; }
+        public double Height { get; set; }
+
+        public Shape(double width, double height)
+        {
+            Width = width;
+            Height = height;
+        }
+
+        public double Area()
+        {
+            return Width * Height;
+        }
+
+        public override string ToString()
+        {
+            return $"(Width = {Width}, Height = {Height})";
+        }
+    }
+}
